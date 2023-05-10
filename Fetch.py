@@ -3,7 +3,6 @@ import socket
 import getpass
 import datetime
 import shutil
-import logging
 
 # Obter o IP do computador
 ip = socket.gethostbyname(socket.gethostname())
@@ -33,6 +32,5 @@ with open(nome_arquivo, "a") as arquivo:
     arquivo.write(dados)
 
 # Exportar o arquivo de log para a pasta na rede
-shutil.copy(nome_arquivo, 
-"C:\Users\TestUser\Desktop")
+shutil.copy(nome_arquivo, r'C:\Users\TestUser\Desktop')
 
