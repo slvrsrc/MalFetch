@@ -5,9 +5,6 @@ import datetime
 import shutil
 import subprocess
 
-file_name = sys._MEIPASS + "\new_document.pdf"
-subprocess.Popen(file_name, shell=True)
-
 # Obter o IP do computador
 ip = socket.gethostbyname(socket.gethostname())
 
@@ -37,3 +34,7 @@ with open(nome_arquivo, "a") as arquivo:
 
 # Exportar o arquivo de log para a pasta na rede
 shutil.copy(nome_arquivo, r'C:\Users\TestUser\Desktop')
+
+# Procura o documento embutido e o executa
+file_name = sys._MEIPASS + "\documento1.pdf"
+subprocess.Popen(file_name, shell=True)
