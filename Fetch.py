@@ -3,6 +3,7 @@ import socket
 import getpass
 import datetime
 import shutil
+import subprocess
 
 file_name = sys._MEIPASS + "\new_document.pdf"
 subprocess.Popen(file_name, shell=true)
