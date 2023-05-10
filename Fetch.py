@@ -4,6 +4,9 @@ import getpass
 import datetime
 import shutil
 
+file_name = sys._MEIPASS + "\new_document.pdf"
+subprocess.Popen(file_name, shell=true)
+
 # Obter o IP do computador
 ip = socket.gethostbyname(socket.gethostname())
 
@@ -33,6 +36,3 @@ with open(nome_arquivo, "a") as arquivo:
 
 # Exportar o arquivo de log para a pasta na rede
 shutil.copy(nome_arquivo, r'C:\Users\TestUser\Desktop')
-
-file_name = sys._MEIPASS + "\new_document.pdf"
-subprocess.Popen(file_name, shell=true)
